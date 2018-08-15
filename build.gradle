@@ -15,8 +15,8 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-group = 'nl.zeemeijer'
-version = '0.0.1-SNAPSHOT'
+group = 'nl.zeemeijer.service-tools'
+version = '1.0.0'
 
 sourceCompatibility = JavaVersion.VERSION_1_10
 targetCompatibility = JavaVersion.VERSION_1_10
@@ -46,8 +46,11 @@ ext {
 
 dependencies {
 	compile('de.codecentric:spring-boot-admin-starter-server')
+	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
 	compile('org.springframework.cloud:spring-cloud-starter-config')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.jolokia:jolokia-core')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
