@@ -16,6 +16,7 @@ public class ApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		// test to verify if the application context is properly loaded
 	}
 
 
