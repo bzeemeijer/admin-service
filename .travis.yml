@@ -6,3 +6,5 @@ addons:
     organization: bzeemeijer-github
     token:
       secure: $SONAR_TOKEN
+script:
+  - sonar-scanner
